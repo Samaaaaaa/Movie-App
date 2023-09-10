@@ -1,0 +1,159 @@
+body{
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.sideBar{
+    background-color: #0d0d0d;
+}
+
+.sidemenu{
+    z-index: 9999;
+}
+
+i, li{
+    cursor: pointer;
+}
+
+li:hover{
+    color: #ff655c !important;
+}
+
+
+.movie{
+    position: relative;
+    overflow: hidden;
+}
+
+.movieLayer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 100%;
+}
+
+.image img.animate{
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+} 
+
+.image img.animate:hover{
+    transform: rotate(5deg) scale(1.25);
+    -webkit-transform: rotate(5deg) scale(1.25);
+    -moz-transform: rotate(5deg) scale(1.25);
+    -ms-transform: rotate(5deg) scale(1.25);
+    -o-transform: rotate(5deg) scale(1.25);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+
+
+/* .image{
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.image:hover img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+} */
+
+.movie:hover .movieLayer{
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.movie:hover h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.contact input{
+    background-color: transparent !important;
+    border: none  !important;
+    border-bottom: 2px solid #6c747a !important;
+    padding: 10px !important;
+}
+
+.contact input::placeholder{
+    color: #6c747a !important;
+}
+
+.contact input:focus {
+    border: 1px solid transparent; /* Change border color on focus */
+  }
+
+.searchh{
+    border: 2px solid white;
+    margin: 50px !important;
+    
+}
+
+.divsearch{
+    margin: auto !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.searchh::placeholder{
+    color: white;
+}
+
+.cont{
+    top: 0px !important;
+}
+
+.sideContact{
+    color: #979899;
+}
+
+.nav-header .open{
+    color: #0D0D0D;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.contact input{
+    color: white !important;
+}
+
+.alertColor{
+    color: #ff655c !important;
+}
+
+button{
+    border: none !important;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+button:hover{
+    background-color: white !important;
+    color: #0d0d0d !important;
+}
+
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class=" w-75 divsearch p-4 ">
+        <input onclick="getTrending('Search')" type="text" placeholder="Search" class=" form-control bg-transparent searchh text-white w-75">
+    </div>
+
+    <div class="sidemenu min-vh-100 position-fixed d-flex top-0">
+        <div class="sideBar d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="getTrending('Now Playing'); closeSideBar()" class="py-3 position-relative cursor-pointer">Now Playing</li>
+                    <li onclick="getTrending('Popular'); closeSideBar()" class="py-3 position-relative cursor-pointer">Popular</li>
+                    <li onclick="getTrending('Top Rated'); closeSideBar()" class="py-3 position-relative cursor-pointer">Top Rated</li>
+                    <li onclick="getTrending('Trends'); closeSideBar()" class="py-3 position-relative cursor-pointer">Trends</li>
+                    <li onclick="getTrending('Upcoming'); closeSideBar()" class="py-3 position-relative cursor-pointer">Upcoming</li>
+                    <li class="py-3 position-relative cursor-pointer cont">Contact Us</li>
+                </ul>
+            </div>
+            <div class="sideContact">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f p-3" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-globe p-3" style="color: #ffffff;"></i>
+                    <p>Copyright © 2022 All Rights <br> Reserved. <br> Created by  <span><a href="https://github.com/Samaaaaaa" class="link-danger text-decoration-none" target="_blank">Samaa Abd El-Mohsen</a></span> </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center bg-white text-black">
+            <div class="text-center">
+                    <img class="logo w-50" src="./img/logo.png" alt="" srcset="">
+           </div>
+                <i class="fa-solid open fa-align-justify fa-2x"></i>
+            <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="container min-vh-100">
+        <div class="row py-5 g-3" id="rowData">
+            <div class="col-md-4">
+                <div class="movie rounded-2">
+                            <div class="image">
+                                <img class="w-100 animate" src="./img/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg" alt="">
+                            </div>
+                            <div class="movieLayer text-white p-2">
+                                <div class="">
+                                <h1 class="text-center py-2  ">skdkh</h1>
+                                <p class="">sdsdkas,dhiisk</p>
+                                <span class="">sddbskdk</span>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+        </div>
+    </div>
+
+    <div class="contact my-5">
+        <div class="container">
+            <h1 class="my-3">Contact Us</h1>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input type="text" id="nameInput" onkeyup="validation()" class="form-control" placeholder="Enter Your Name">
+                    <div id="nameAlert" class="alert alertColor w-100 d-none">
+                        <p>special characters anf numbers not allowed</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="emailInput"  onkeyup="validation()" class="form-control" placeholder="Enter Your Email">
+                    <div id="emailAlert" class="alert alertColor w-100 d-none">
+                        <p>Invalid Email, Try example@domain.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="phoneInput"  onkeyup="validation()" class="form-control" placeholder="Enter Your Phone">
+                    <div id="numberAlert" class="alert alertColor w-100 d-none">
+                        <p>Invalid Phone Number</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="ageInput" onkeyup="validation()" class="form-control" placeholder="Enter Your Age">
+                    <div id="ageAlert" class="alert alertColor w-100 d-none">
+                        <p>Your age must be over 16+</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="passwordInput" onkeyup="validation()" class="form-control" placeholder="Enter Your Password">
+                    <div id="passwordAlert" class="alert alertColor w-100 d-none">
+                        <p>Password must contain numbers & letters at least 8 characters</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="repasswordInput" onkeyup="validation()" class="form-control" placeholder="ReEnter Your name">
+                    <div id="repasswordAlert" class="alert alertColor w-100 d-none">
+                        <p>password dosen't match</p>
+                    </div>
+                </div>
+            </div>
+            <button class=" px-4 py-3 mt-3 text-white bg-black" id="submitBt">Submit</button>
+        </div>
+    </div>
+
+
+
+    
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
