@@ -66,37 +66,37 @@ async function getTrending(category) {
     displayTrends(data)
 }
 
-// function displayTrends(arr) {
-//     var cartona = "";
-//     for (let i = 0; i < arr.length; i++) {
-//         cartona += `<div class="col-md-4">
-//         <div class="movie rounded-2">
-//                     <div class="image">
-//                         <img class="w-100" src="https://image.tmdb.org/t/p/w500${arr[i].poster_path}" alt="">
-//                     </div>
-//                     <div class="movieLayer text-white p-2">
-//                         <div class="">
-//                         <h1 class="text-center py-2  ">${arr[i].title}</h1>
-//                         <p class="">${arr[i].overview}</p>
-//                         <span class="">${arr[i].release_date}</span>
-//                         <div class="d-flex">
-//                             <i class="fa-solid fa-star"></i>
-//                             <i class="fa-solid fa-star"></i>
-//                             <i class="fa-solid fa-star"></i>
-//                             <i class="fa-solid fa-star"></i>
-//                         </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//     `
+function displayTrends(arr) {
+    var cartona = "";
+    for (let i = 0; i < arr.length; i++) {
+        cartona += `<div class="col-md-4">
+        <div class="movie rounded-2">
+                    <div class="image">
+                        <img class="w-100" src="https://image.tmdb.org/t/p/w500${arr[i].poster_path}" alt="">
+                    </div>
+                    <div class="movieLayer text-white p-2">
+                        <div class="">
+                        <h1 class="text-center py-2  ">${arr[i].title}</h1>
+                        <p class="">${arr[i].overview}</p>
+                        <span class="">${arr[i].release_date}</span>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    `
 
-//     }
+    }
 
-//     document.getElementById("rowData").innerHTML = cartona
+    document.getElementById("rowData").innerHTML = cartona
 
 
-// }
+}
 
 document.getElementById("nameInput").addEventListener("focus", ()=>{
     nameTouch = true
